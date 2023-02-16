@@ -6,6 +6,8 @@ from tqdm import tnrange
 from torch.autograd import Variable
 from loss import DDC_loss
 
+x = 5
+
 
 def train(model, source_loader, target_loader,
           optimizer, epoch, lambda_factor, cuda=False):
@@ -88,3 +90,5 @@ def train(model, source_loader, target_loader,
               ))
 
     return results
+    
+
